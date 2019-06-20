@@ -3,7 +3,4 @@ version: 0.2
 phases:
   build:
     commands:
-      - which npm
-      - which node
       - node --version
-      - which php
