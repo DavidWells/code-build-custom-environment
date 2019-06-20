@@ -3,4 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - ansible --version
+      - which npm
+      - which node
+      - node --version
+      - which php
