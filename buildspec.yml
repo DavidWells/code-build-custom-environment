@@ -5,11 +5,13 @@ phases:
     commands:
       - echo Entered the install phase...
       - ls
+      - printenv
     finally:
       - echo This always runs even if the update or install command fails 
   pre_build:
     commands:
       - echo Entered the pre_build phase...
+      - printenv
     finally:
       - echo This always runs even if the login command fails 
   build:
@@ -23,3 +25,4 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
+      - printenv
